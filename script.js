@@ -15,7 +15,7 @@ document.getElementById('addItem').addEventListener('click', function() {
 });
 
 function addItem(name, quantity) {
-    let items = JSON.parse(localStorage.minusItem('items')) || [];
+    let items = JSON.parse(localStorage.getItem('items')) || [];
 
     const existingItemIndex = items.findIndex(item => item.name === name);
     if (existingItemIndex > -1) {
