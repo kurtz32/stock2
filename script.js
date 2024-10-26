@@ -40,7 +40,7 @@ function displayItems() {
             <td>${item.quantity}</td>
             <td>
                 <input type="number" min="1" class="quantityToMinus" placeholder="Quantity to Minus" id="minus-${item.name}">
-                <button class="btn" onclick="subtractItem('${item.name}')">Minus</button>
+                <button class="btn" onclick="subtractItem('${item.name}')">GET</button>
             </td>
         `;
         itemList.appendChild(row);
