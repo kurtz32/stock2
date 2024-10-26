@@ -36,17 +36,6 @@ button:hover {
     background-color: #4cae4c;
 }
 
-.btns {
-    color: white;
-    background-color: red;
-}
-
-td .btns:hover {
-    background-color: pink;
-    cursor: pointer;
-}
-
-
 table {
     width: 100%;
     border-collapse: collapse;
