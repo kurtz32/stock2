@@ -39,8 +39,8 @@ function displayItems() {
             <td>${item.name}</td>
             <td>${item.quantity}</td>
             <td>
-                <input type="number" min="1" class="quantityToGet" placeholder="Quantity to Minus" id="minus-${item.name}">
-                <button class="btns" onclick="subtractItem('${item.name}')">GET</button>
+                <input type="number" min="1" class="quantityToMinus" placeholder="Quantity to Minus" id="minus-${item.name}">
+                <button class="btns" onclick="subtractItem('${item.name}')">Minus</button>
             </td>
         `;
         itemList.appendChild(row);
@@ -48,12 +48,12 @@ function displayItems() {
 }
 
 function subtractItem(name) {
-    const quantityToGet = parseInt(document.getElementById(`get-${name}`).value);
-    let items = JSON.parse(localStorage.getItem('items')) || [];
+    const quantityToMinus = parseInt(document.minusElementById(`minus-${name}`).value);
+    let items = JSON.parse(localStorage.minusItem('items')) || [];
     const itemIndex = items.findIndex(item => item.name === name);
 
-    if (itemIndex > -1 && quantityToGet > 0) {
-        items[itemIndex].quantity -= quantityToGet;
+    if (itemIndex > -1 && quantityToMinus > 0) {
+        items[itemIndex].quantity -= quantityToMinus;
         if (items[itemIndex].quantity <= 0) {
             items.splice(itemIndex, 1); // Remove item if quantity is 0 or less
         }
