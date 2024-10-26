@@ -38,6 +38,7 @@ button:hover {
 
 .btn {
     color: white;
+    background-color: red;
 }
 
 table {
