@@ -41,6 +41,12 @@ button:hover {
     background-color: red;
 }
 
+.btns:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
