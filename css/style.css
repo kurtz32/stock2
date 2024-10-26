@@ -41,7 +41,7 @@ button:hover {
     background-color: red;
 }
 
-.btns:hover {
+td .btns:hover {
     background-color: pink;
     cursor: pointer;
 }
