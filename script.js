@@ -48,8 +48,8 @@ function displayItems() {
 }
 
 function subtractItem(name) {
-    const quantityToMinus = parseInt(document.minusElementById(`minus-${name}`).value);
-    let items = JSON.parse(localStorage.minusItem('items')) || [];
+    const quantityToMinus = parseInt(document.getElementById(`minus-${name}`).value);
+    let items = JSON.parse(localStorage.getItem('items')) || [];
     const itemIndex = items.findIndex(item => item.name === name);
 
     if (itemIndex > -1 && quantityToMinus > 0) {
@@ -63,7 +63,7 @@ function subtractItem(name) {
 }
 
 function searchItem() {
-    const searchInput = document.minusElementById('searchInput').value.toLowerCase();
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const rows = document.querySelectorAll('#itemList tr');
 
     rows.forEach(row => {
