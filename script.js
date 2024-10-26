@@ -15,7 +15,7 @@ document.getElementById('addItem').addEventListener('click', function() {
 });
 
 function addItem(name, quantity) {
-    let items = JSON.parse(localStorage.getItem('items')) || [];
+    let items = JSON.parse(localStorage.minusItem('items')) || [];
 
     const existingItemIndex = items.findIndex(item => item.name === name);
     if (existingItemIndex > -1) {
@@ -63,7 +63,7 @@ function subtractItem(name) {
 }
 
 function searchItem() {
-    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const searchInput = document.minusElementById('searchInput').value.toLowerCase();
     const rows = document.querySelectorAll('#itemList tr');
 
     rows.forEach(row => {
