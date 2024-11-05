@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 90px;
+    padding: 3.5vw 8.4vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     text-transform: uppercase;
@@ -21,7 +21,7 @@
 }
 
 .header .logo img {
-    width: 70px;
+    width: 6.5vw;
     height: 79px;
     border-radius: 50%;
 }
@@ -30,7 +30,7 @@
     display: flex;
     list-style-type: none;
     gap: 5rem;
-    font-size: 19px;
+    font-size: 1.8vw;
     font-weight: 920px;
     letter-spacing: 1.5px;
     cursor: pointer;
@@ -65,10 +65,10 @@
     border-width: 2px;
     background-color: lightblue;
     color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 7px;
-    margin-bottom: 5px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.7vh;
+    margin-bottom: 0.5.vh;
     
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
