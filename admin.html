@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Side Navigation bar Using HTML and CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Stock control management system</h2>
+        <ul>
+            <li><a href="admin.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>Blogs</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
+            <li><a href="index.html"><i class="fas fa-map-pin"></i>Log-out</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="https://web.facebook.com/profile.php?id=100057648991825"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header"><h1>list items</h1></div>  
+        
+    
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Item" onkeyup="searchItem()">
+        </div>
+
+    <div class="input-container">
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="number" id="itemQuantity" placeholder="Quantity" min="1">
+        <button id="addItem">Add Item</button>
+    </div>
+    
+    
+    
+
+    <!-- table for the items -->
+    <div style="height: 305px; overflow-y: auto">
+        <table class="table table-sticky-header table-sticky-footer">
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="itemList">
+        </tbody>
+    </table>
+</div>
+    
+    </div>
+</div>
+<!-- partial -->
+  
+</body>
+  <script src="script.js"></script>
+</html>
